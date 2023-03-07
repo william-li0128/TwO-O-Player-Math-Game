@@ -2,11 +2,11 @@
 # It requires the other files/gems that it needs
 require 'pp'
 require './game'
-require './players'
 require './question'
 
-# test initialize from .players
-will = Players.new("William")
-tiff = Players.new("Tiffany")
-puts will
-puts tiff
+# test initialize from .game
+game = Game.new("Tiffany", "William")
+# puts game
+
+# test Start from .game
+game.start
